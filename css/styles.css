@@ -1,0 +1,19 @@
+body {
+   font-family: "Palatino Linotype", FreeSerif, serif;
+   line-height: 1.5;
+   font-size: 1.6em;
+}
+
+.full-width-banner {
+   /*background-color: #262626;*/
+   background-image: url(https://cdn.pixabay.com/photo/2016/11/24/20/48/programming-1857236_960_720.jpg);
+}
+.full-width-banner > .row {
+   background-color: rgba(255, 165, 0, 0.9);
+}
+
+.full-width-banner .banner-text {
+   background-color: #ffcb6c;
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
+}
