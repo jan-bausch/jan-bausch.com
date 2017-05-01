@@ -1,19 +1,34 @@
 body {
    font-family: "Palatino Linotype", FreeSerif, serif;
    line-height: 1.5;
-   font-size: 1.6em;
 }
 
 .full-width-banner {
-   /*background-color: #262626;*/
-   background-image: url(https://cdn.pixabay.com/photo/2016/11/24/20/48/programming-1857236_960_720.jpg);
-}
-.full-width-banner > .row {
-   background-color: rgba(255, 165, 0, 0.9);
 }
 
 .full-width-banner .banner-text {
-   background-color: #ffcb6c;
+   background-color: white;
    padding-top: 1.5em;
    padding-bottom: 1.5em;
+}
+
+#banner-website {
+   background-image: url(https://designcontest-com-designcontest.netdna-ssl.com/blog/wp-content/uploads/2016/04/Ploskiy-e1461328214424.jpg);
+}
+#banner-website > .row {
+   background-color: rgba(253, 169, 43, 0.9);
+}
+
+#banner-sourcecode {
+   background-image: url(https://cdn.pixabay.com/photo/2016/11/24/20/48/programming-1857236_960_720.jpg);
+}
+#banner-sourcecode > .row {
+   background-color: rgba(88, 104, 128, 0.9);
+}
+
+#banner-interactive {
+   background-image: url(http://tom.londondroids.com/images/portfolio-rangerover-evoque.jpg);
+}
+#banner-interactive > .row {
+   background-color: rgba(90, 138, 75, 0.9);
 }
