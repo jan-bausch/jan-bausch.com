@@ -1,15 +1,24 @@
 body {
    font-family: "Palatino Linotype", FreeSerif, serif;
    line-height: 1.5;
-   padding-top: 2.5em;
+}
+
+#introduction h1 {
+   font-size: 2.1rem;
+   padding-left: 0.3rem;
+   padding-right: 0.3rem;
+}
+
+#introduction, #contact {
+   padding-top: 3em;
 }
 #introduction p, #introduction h1{
    display: inline;
 }
-#contact td {
+#contact table td {
    border-top: 1px solid #d2d2d2;
 }
-#contact tr:first-child td {
+#contact table tr:first-child td {
    border-top: none;
 }
 
@@ -23,18 +32,20 @@ body {
 .full-width-banner {
    width: 100%;
    background-position: left bottom;
-   animation: swipe 60s linear infinite;
+   animation: swipe-left 60s linear infinite;
 }
 
-.full-width-banner .banner-text {
-   background-color: white;
-   padding: 1.5em 2em;
+.full-width-banner .transparent-overlay {
    min-height: 150px;
 }
 
-@keyframes swipe {
+@keyframes swipe-left {
    from { background-position: 0px center; }
    to { background-position: -1790px center; }
+}
+@keyframes swipe-right {
+   from { background-position: -1790px center; }
+   to { background-position: 0px center; }
 }
 #banner-website {
    background-image: url(https://designcontest-com-designcontest.netdna-ssl.com/blog/wp-content/uploads/2016/04/Ploskiy-e1461328214424.jpg);
@@ -45,6 +56,7 @@ body {
 
 #banner-sourcecode {
    background-image: url(https://cdn.pixabay.com/photo/2016/11/24/20/48/programming-1857236_960_720.jpg);
+   animation: swipe-right 120s linear infinite;
 }
 #banner-sourcecode > .transparent-overlay {
    background-color: rgba(88, 104, 128, 0.9);
@@ -55,4 +67,9 @@ body {
 }
 #banner-interactive > .transparent-overlay {
    background-color: rgba(90, 138, 75, 0.9);
+}
+
+#disclaimer {
+   color: #807e7e;
+   font-size: 0.7rem;
 }
