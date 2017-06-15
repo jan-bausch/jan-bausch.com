@@ -3,16 +3,18 @@ body {
    line-height: 1.5;
    padding-top: 2.5em;
 }
-
-#contact th, #contact td {
-   border-top: 2px dashed #d8d8d8;
+#introduction p, #introduction h1{
+   display: inline;
 }
-#contact {
-   border-bottom: 2px dashed #d8d8d8;
+#contact td {
+   border-top: 1px solid #d2d2d2;
+}
+#contact tr:first-child td {
+   border-top: none;
 }
 
 .underlined {
-   border-bottom: 2px dashed #d8d8d8;
+   border-bottom: 1px solid #d2d2d2;
    display: inline-block;
    padding-right: 50px;
    padding-top: 15px;
@@ -27,7 +29,7 @@ body {
 .full-width-banner .banner-text {
    background-color: white;
    padding: 1.5em 2em;
-   min-height: 320px;
+   min-height: 150px;
 }
 
 @keyframes swipe {
