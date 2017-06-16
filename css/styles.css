@@ -1,5 +1,5 @@
 body {
-   font-family: "Palatino Linotype", FreeSerif, serif;
+   font-family: "Cantarell", sans-serif;
    line-height: 1.5;
 }
 
@@ -64,6 +64,7 @@ body {
 
 #banner-interactive {
    background-image: url(http://tom.londondroids.com/images/portfolio-rangerover-evoque.jpg);
+   animation-duration: 100s;
 }
 #banner-interactive > .transparent-overlay {
    background-color: rgba(90, 138, 75, 0.9);
