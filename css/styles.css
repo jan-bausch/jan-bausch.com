@@ -3,15 +3,21 @@ body {
    line-height: 1.5;
 }
 
+.my-5 {
+   margin-top: 6rem !important;
+}
+
+#introduction {
+   margin-top: 6rem;
+   margin-bottom: 3rem;
+}
+
 #introduction h1 {
    font-size: 2.1rem;
    padding-left: 0.3rem;
    padding-right: 0.3rem;
 }
 
-#introduction, #contact {
-   padding-top: 3em;
-}
 #introduction p, #introduction h1{
    display: inline;
 }
@@ -69,6 +75,7 @@ body {
 #banner-interactive > .transparent-overlay {
    background-color: rgba(90, 138, 75, 0.9);
 }
+
 
 #disclaimer {
    color: #807e7e;
