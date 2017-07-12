@@ -3,6 +3,12 @@ body {
    line-height: 1.5;
 }
 
+@media (min-width: 1200px) {
+   .container{
+      max-width: 970px;
+   }
+}
+
 .my-5 {
    margin-top: 6rem !important;
 }
@@ -12,15 +18,16 @@ body {
    margin-bottom: 3rem;
 }
 
-#introduction h1 {
-   font-size: 2.1rem;
-   padding-left: 0.3rem;
-   padding-right: 0.3rem;
+#colorbar {
+   max-width: 80%;
+   width: 200px;
+   height: 10px;
+   background-image: url(../img/colorbar.png);
+   background-size: 100% 100%;
+   margin-bottom: 1em;
 }
 
-#introduction p, #introduction h1{
-   display: inline;
-}
+
 #contact table td {
    border-top: 1px solid #d2d2d2;
 }
@@ -35,14 +42,34 @@ body {
    padding-top: 15px;
    padding-bottom: 4px;
 }
+
 .full-width-banner {
    width: 100%;
+}
+
+.full-width-banner h2 {
+   color: white;
+   text-align: center;
+   color: rgba(255, 255, 255, 0.8); 
+   text-shadow: 0px 2px 0px rgba(31, 31, 31, 0.2);
+}
+
+.scrolling-tile {
+   min-height: 150px;
    background-position: left bottom;
    animation: swipe-left 60s linear infinite;
 }
 
-.full-width-banner .transparent-overlay {
-   min-height: 150px;
+#banner-website .scrolling-tile {
+   background-image: url(../img/websites.jpg);
+}
+
+#banner-sourcecode .scrolling-tile {
+   background-image: url(../img/sourcecode.jpg);
+}
+
+.text-tile {
+   background-color: white;
 }
 
 @keyframes swipe-left {
@@ -53,31 +80,21 @@ body {
    from { background-position: -1790px center; }
    to { background-position: 0px center; }
 }
-#banner-website {
-   background-image: url(https://designcontest-com-designcontest.netdna-ssl.com/blog/wp-content/uploads/2016/04/Ploskiy-e1461328214424.jpg);
-}
-#banner-website > .transparent-overlay {
-   background-color: rgba(253, 169, 43, 0.9);
-}
 
-#banner-sourcecode {
-   background-image: url(../img/sourcecode.jpg);
-   animation: swipe-right 120s linear infinite;
-}
-#banner-sourcecode > .transparent-overlay {
-   background-color: rgba(88, 104, 128, 0.9);
-}
 
-#banner-interactive {
-   background-image: url(http://tom.londondroids.com/images/portfolio-rangerover-evoque.jpg);
-   animation-duration: 100s;
-}
-#banner-interactive > .transparent-overlay {
-   background-color: rgba(90, 138, 75, 0.9);
+@media (min-width: 992px) {
+   #banner-website {
+      background-color: #fda92b;
+   }
+
+   #banner-sourcecode {
+      background-color: #586880;
+   }
 }
 
 
 #disclaimer {
    color: #807e7e;
    font-size: 0.7rem;
+   margin-top: 5em;
 }
