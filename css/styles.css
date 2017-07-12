@@ -9,24 +9,33 @@ body {
    }
 }
 
-.my-5 {
-   margin-top: 6rem !important;
+.underlined {
+   border-bottom: 1px solid #d2d2d2;
+   display: inline-block;
+   padding-right: 50px;
+   padding-top: 15px;
+   padding-bottom: 4px;
 }
 
+.skill {
+    padding: .3em .5em;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
 #introduction {
-   margin-top: 6rem;
-   margin-bottom: 3rem;
+   padding-top: 6rem;
+   padding-bottom: 3rem;
+   text-align: center;
 }
 
 #colorbar {
    max-width: 80%;
+   margin: 0 auto 1em;
    width: 200px;
    height: 10px;
    background-image: url(../img/colorbar.png);
    background-size: 100% 100%;
-   margin-bottom: 1em;
 }
-
 
 #contact table td {
    border-top: 1px solid #d2d2d2;
@@ -35,13 +44,6 @@ body {
    border-top: none;
 }
 
-.underlined {
-   border-bottom: 1px solid #d2d2d2;
-   display: inline-block;
-   padding-right: 50px;
-   padding-top: 15px;
-   padding-bottom: 4px;
-}
 
 .full-width-banner {
    width: 100%;
@@ -57,28 +59,31 @@ body {
 .scrolling-tile {
    min-height: 150px;
    background-position: left bottom;
-   animation: swipe-left 60s linear infinite;
+   padding-top: 2em;
 }
 
 #banner-website .scrolling-tile {
+   animation: swipe-left 60s linear infinite;
    background-image: url(../img/websites.jpg);
 }
 
 #banner-sourcecode .scrolling-tile {
+   animation: swipe-right 60s linear infinite;
    background-image: url(../img/sourcecode.jpg);
 }
 
 .text-tile {
    background-color: white;
+   padding-top: 1em;
 }
 
 @keyframes swipe-left {
    from { background-position: 0px center; }
-   to { background-position: -1790px center; }
+   to { background-position: -750px center; }
 }
 @keyframes swipe-right {
-   from { background-position: -1790px center; }
-   to { background-position: 0px center; }
+   from { background-position: 0px center; }
+   to { background-position: 750px center; }
 }
 
 
@@ -91,6 +96,9 @@ body {
    #banner-sourcecode {
       background-size: 100% 100%;
       background-image: url(../img/blue.png);
+   }
+   #banner-sourcecode .text-tile {
+      text-align: right;
    }
 }
 
