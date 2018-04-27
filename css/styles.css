@@ -5,24 +5,65 @@ body {
 
 @media (min-width: 1200px) {
    .container{
-      max-width: 970px;
+      max-width: 870px;
    }
 }
 
-#picture {
-   width: 100%;
+#main {
+   margin-top: 8em;
+   position: relative;
 }
 
-.color-tile::before {
+#main::before {
+   background-color: #fda92b;
+   animation: Gradient 15s ease infinite alternate;
+   transform: skew(1deg, -1deg);
+   z-index: -2;
+}
+
+
+#text-panel::before {
+   background-color: white;
+   transform: skew(-1deg, 0.5deg);
+   z-index: -1;
+}
+
+
+
+.tile {
+   padding: 2em;
+}
+
+.tile::before {
    content: "";
    display: block;
-   background-color: red;
    position: absolute;
-   top: 0px;
-   bottom: 0px;
-   right: 0px;
-   left: 0px;
+   top: 0em;
+   bottom: 0em;
+   left: 0em;
+   right: 0em;
 }
+
+@keyframes Gradient {
+	0% {
+      background-color: #fda92b;
+	}
+	50% {
+      background-color: #5a8a4b;
+	}
+	100% {
+      background-color: #586880;
+	}
+}
+
+
+
+#picture {
+   width: 100%;
+   margin-top: -50%;
+   max-width: 30vw;
+}
+
 
 #contact table td {
    border-top: 1px solid #d2d2d2;
