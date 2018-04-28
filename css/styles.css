@@ -78,3 +78,17 @@ body {
    font-size: 0.7rem;
    margin-top: 5em;
 }
+
+
+#footer * {
+   color: #807e7e;
+}
+#footer .link::after {
+   content: "\2022";
+   padding-left: .5em;
+   padding-right: .3em;
+}
+
+#footer .link:last-child::after {
+   display: none;
+}
