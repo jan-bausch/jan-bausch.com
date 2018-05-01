@@ -1,12 +1,10 @@
 body {
-   font-family: "Cantarell", sans-serif;
+   font-family: "Fira Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
    line-height: 1.5;
 }
 
-@media (min-width: 1200px) {
-   .container{
-      max-width: 870px;
-   }
+#heading {
+   font-weight: bold;
 }
 
 #main {
@@ -22,6 +20,14 @@ body {
 }
 
 
+#text-panel {
+   padding: 1em;
+}
+
+#text-panel p:last-child {
+   margin-bottom: 0;
+}
+
 #text-panel::before {
    background-color: white;
    transform: skew(-1deg, 0.5deg);
@@ -33,6 +39,7 @@ body {
 .tile {
    padding: 2em;
 }
+
 
 .tile::before {
    content: "";
@@ -91,4 +98,16 @@ body {
 
 #footer .link:last-child::after {
    display: none;
+}
+
+@media (min-width: 1200px) {
+   .container{
+      max-width: 870px;
+   }
+}
+
+@media (min-width: 768px) {
+   #text-panel {
+      padding: 2em;
+   }
 }
