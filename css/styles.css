@@ -1,10 +1,22 @@
 body {
    font-family: "Fira Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+   font-size: .9em;
    line-height: 1.5;
 }
 
+a {
+   color: #292b2c;
+   text-decoration: underline;
+} 
+
+a:hover {
+   color: #757575;
+} 
+
 #heading {
    font-weight: bold;
+   font-size: 1.8em;
+   margin-left: -1px;
 }
 
 #main {
@@ -65,9 +77,14 @@ body {
 
 
 
+#picture-container {
+}
+
 #picture {
    width: 100%;
-   margin-top: -50%;
+   margin-top: -40%;
+   padding-top: 20px;
+   padding-bottom: 20px;
    max-width: 30vw;
 }
 
@@ -83,7 +100,7 @@ body {
 #disclaimer {
    color: #807e7e;
    font-size: 0.7rem;
-   margin-top: 5em;
+   margin-top: 4em;
 }
 
 
