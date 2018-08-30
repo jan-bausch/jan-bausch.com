@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /www/data/
+Disallow: /lebenslauf/
+Disallow: /kontakt/
