@@ -44,6 +44,11 @@ a:hover {
    background-color: white;
    transform: skew(-0.5deg, 0.5deg);
    z-index: -1;
+   padding: 1em;
+   top: 2em;
+   bottom: 2em;
+   left: 1em;
+   right: 1em;
 }
 
 
@@ -126,7 +131,7 @@ a:hover {
 
 @media (min-width: 1200px) {
    .container{
-      max-width: 870px;
+      max-width: 670px;
    }
 }
 
