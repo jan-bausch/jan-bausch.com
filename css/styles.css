@@ -1,7 +1,8 @@
 body {
    font-family: "Fira Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-   font-size: .9em;
-   line-height: 1.5;
+   font-size: 1.1em;
+   line-height: 1.4em;
+   vertical-align: center;
 }
 
 a {
@@ -13,62 +14,54 @@ a:hover {
    color: #757575;
 } 
 
-#heading {
-   font-weight: bold;
-   font-size: 1.8em;
-   margin-left: -1px;
+h1 {
+   font-size: 1.6em;
+   color: #151515;
 }
 
-#main {
-   margin-top: 8em;
-   position: relative;
-}
-
-#main::before {
-   background-color: #fda92b;
-   animation: Gradient 15s ease infinite;
-   transform: skew(0.5deg, -1deg);
-   z-index: -2;
-}
-
-
-#text-panel {
-   padding: 1em;
-}
-
-#text-panel p:last-child {
-   margin-bottom: 0;
-}
-
-#text-panel::before {
+html {
    background-color: white;
-   transform: skew(-0.5deg, 0.5deg);
-   z-index: -1;
-   padding: 1em;
-   top: 2em;
-   bottom: 2em;
-   left: 1em;
-   right: 1em;
 }
 
+body {
+   height: 80vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
+.wrapper {
+   width: 22em;
+   max-width: 90%;
+}
 
-.tile {
+.outer-border {
    padding: 2em;
+   animation: gradient 15s ease infinite;
+   transform: rotate(-2deg);
 }
 
+main {
+   background-color: white;
+   padding: 1.2em 2em 0.2em;
+   transform: rotate(2deg);
+}
 
-.tile::before {
-   content: "";
+footer {
+   margin-top: 2em;
+   font-size: 0.7em;
+   line-height: 1.3em;
+   color: gray;
+}
+
+.impressum-link {
    display: block;
-   position: absolute;
-   top: 0em;
-   bottom: 0em;
-   left: 0em;
-   right: 0em;
+   width: 100%;
+   text-align: center;
+   text-decoration: none;
 }
 
-@keyframes Gradient {
+@keyframes gradient {
    0% {
       background-color: #fda92b;
    }
@@ -80,71 +73,5 @@ a:hover {
    }
    100% {
       background-color: #fda92b;
-   }
-}
-
-
-
-#picture-container {
-}
-
-#picture {
-   width: 100%;
-   margin-top: -40%;
-   padding-top: 20px;
-   padding-bottom: 20px;
-   max-width: 30vw;
-}
-
-
-#contact h3 {
-   padding-left: .3em;
-}
-
-#contact table td {
-   border-top: 1px solid #d2d2d2;
-}
-#contact table tr:first-child td {
-   border-top: none;
-}
-
-
-#disclaimer {
-   color: #807e7e;
-   font-size: 0.7rem;
-   margin-top: 3.5em;
-}
-
-
-#footer * {
-   color: #807e7e;
-}
-#footer .link::after {
-   content: "\2022";
-   padding-left: .5em;
-   padding-right: .3em;
-}
-
-#footer .link:last-child::after {
-   display: none;
-}
-
-@media (min-width: 1200px) {
-   .container{
-      max-width: 670px;
-   }
-}
-
-@media (min-width: 768px) {
-   #text-panel {
-      padding: 2em;
-   }
-
-   #main::before {
-      transform: skew(1deg, -1deg);
-   }
-
-   #text-panel::before {
-      transform: skew(-1deg, 0.5deg);
    }
 }
