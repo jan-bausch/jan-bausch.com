@@ -1,14 +1,12 @@
-# Homepage [jfbausch.de](jfbausch.de) 
-Personal homepage written in plain HTML, CSS & Bootstrap.
-![Screenshot of homepage](screenshot.png)
-
+# Homepage [jfbausch.de](jan-bausch.com) 
+Personal homepage written in plain HTML and CSS.
 
 ## License
 
 ```
 MIT License
 
-Copyright (c) 2018 Jan F. Bausch
+Copyright (c) 2022 Jan F. Bausch
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
