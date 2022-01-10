@@ -1,4 +1,4 @@
-# Homepage [jan-bausch.com](jan-bausch.com) 
+# Homepage [jan-bausch.com](https://jan-bausch.com) 
 Personal homepage written in plain HTML and CSS.
 
 ## License
