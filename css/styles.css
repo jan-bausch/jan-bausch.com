@@ -1,5 +1,18 @@
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./FiraSans-Regular.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./FiraSans-Bold.woff2) format('woff2');
+}
+
 body {
-   font-family: "Fira Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+   font-family: "Fira Sans", sans-serif;
    font-size: 1.3em;
    vertical-align: center;
 }
@@ -16,6 +29,7 @@ a:hover {
 h1 {
    font-size: 1.6em;
    color: #151515;
+   text-align: center;
 }
 
 html {
@@ -49,9 +63,9 @@ body {
 
 .portrait {
    position: relative;
-   width: 80%;
+   width: 70%;
    max-width: 50vw;
-   margin: 2em auto 2em;
+   margin: 3em auto 3em;
 }
 
 .portrait > img {
@@ -66,26 +80,32 @@ body {
    right: -2em;
    left: -2em;
    z-index: -1;
-   opacity: .5;
+   opacity: .6;
    transform: rotate(-2deg);
    animation: gradient 15s ease infinite;
 }
 
-.highlight {
-   padding: 0 0.2em;
-   color: white;
-   animation: gradient 15s ease infinite;
+.icon {
+   display: inline-block;
+   height: 1em;
+   padding: .1em;
+   overflow: visible;
+   vertical-align: -0.3em;
+   margin-right: .1em;
 }
 
 @media (min-width: 40em){
    .portrait {
-      margin: 1em 0 2em;
+      margin: 0.5em auto 2em;
    }
    .column-40 {
       width: calc(40% - 3rem);
    }
    .column-60 {
       width: calc(60% - 3rem);
+   }
+   h1 {
+      text-align: left;
    }
 }
 
@@ -128,20 +148,5 @@ footer {
    }
    100% {
       background-color: #fda92b;
-   }
-}
-
-@keyframes text-gradient {
-   0% {
-      border-bottom-color: #fda92b;
-   }
-   25% {
-      border-bottom-color: #5a8a4b;
-   }
-   75% {
-      border-bottom-color: #586880;
-   }
-   100% {
-      border-bottom-color: #fda92b;
    }
 }
