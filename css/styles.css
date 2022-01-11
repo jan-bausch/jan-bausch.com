@@ -14,6 +14,7 @@
 body {
    font-family: "Fira Sans", sans-serif;
    font-size: 1.3em;
+   font-display: swap;
    vertical-align: center;
 }
 
